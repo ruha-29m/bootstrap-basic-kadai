@@ -24,100 +24,154 @@
   <main>
 
 
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="img/sushi.jpg" div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!--kdai_006-->
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="image1.jpg" class="card-img-top" alt="Image 1">
-            <div class="card-body">
-              <h5 class="card-title">Image 1</h5>
-              <p class="card-text">Description for image 1.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="image2.jpg" class="card-img-top" alt="Image 2">
-            <div class="card-body">
-              <h5 class="card-title">Image 2</h5>
-              <p class="card-text">Description for image 2.</p>
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="image3.jpg" class="card-img-top" alt="Image 3">
-            <div class="card-body">
-              <h5 class="card-title">Image 3</h5>
-              <p class="card-text">Description for image 3.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="image4.jpg" class="card-img-top" alt="Image 4">
-            <div class="card-body">
-              <h5 class="card-title">Image 4</h5>
-              <p class="card-text">Description for image 4.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- ナビゲーションバー開始 -->
+   <nav class="navbar navbar-expand-lg">
+     <div class="container">
+       <a class="navbar-brand my_navbar_brand">
+         <img class="img-fluid navbar_brand_logo" src="img/site_logo.png" alt="サイトアイコン"><span>SAMURAI KITCHEN</span>
+       </a>
+       <div class="navbar-toggler hamburger_menu" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <input type="checkbox" id="hamburger_btn_check">
+         <label for="hamburger_btn_check" class="hamburger_btn">
+           <img class="btn_open" src="img/button_open.png" alt="ナビゲーションバーのボタン">
+           <img class="btn_close" src="img/button_close.png" alt="ナビゲーションバーのボタン">
+         </label>
+       </div>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item px-2">
+             <a class="nav-link my_nav_link my-2" aria-current="page" href="#">HOME</a>
+           </li>
 
+           <li class="nav-item px-2">
+             <a class="nav-link my_nav_link my-2" href="#about">ABOUT US</a>
+           </li>
+
+           <li class="nav-item px-2">
+             <a class="nav-link my_nav_link my-2" href="#gallery">GALLERY</a>
+           </li>
+
+           <li class="nav-item px-2">
+             <a class="nav-link my_nav_link my-2" href="#menu">MENU</a>
+           </li>
+
+           <li class="nav-item px-2">
+             <a class="nav-link my_nav_link my-2" href="#review">CUSTOMER REVIEWS</a>
+           </li>
+
+           <li class="nav-item px-2">
+             <a class="nav-link my_nav_link my-2" href="#access">ACCESS</a>
+           </li>
+             
+         </ul>
+       </div>
+     </div>
+   </nav>
+<!-- ナビゲーションバー終了 -->
+
+    <!-- カルーセル開始 -->
+
+   <!-- カルーセル部分 -->
+   <!-- idのmyCarouselはインジケーター部分のdata-bs-targetと紐付く必要がある。mb-5で下方向に余白追加。 -->
+   <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+
+     <!-- インジケーター部分 -->
+     <ol class="carousel-indicators">
+       <!-- この箇所と前述のidは紐付いている。data-bs-slide-toの番号がカルーセルの順番。 -->
+       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+       <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+       <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+     </ol>
+
+     <!-- carousel-inner：カルーセルのキャプションと背景画像の部分。現在は1枚目だけ表示。 -->
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="img/slider-1.jpg" alt="SAMURAI KITCHEN-1">
+          <h1>
+            <h1 class="my_carousel_caption">
+             Welcome to<br>
+             SAMURAI KITCHEN
+            </h1>
+          </h1>
+         </div>
+       </div>
+     </div>
+     
+ <!-- カルーセル2枚目 -->
+ <div class="carousel-item">
+   <img src="img/slider-2.jpg" alt="サンプル画像">
+   <div class="carousel-caption">
+     <h1 class="my_carousel_caption">
+        The fabulous combination of&nbsp;wine&nbsp;and&nbsp;food
+     </h1>
+   </div>
+ </div>
+ <!-- カルーセル３枚目 -->
+ <div class="carousel-item">
+   <img src="img/slider-3.jpg" alt="サンプル画像">
+   <div class="carousel-caption">
+     <h1 class="my_carousel_caption">Get the Italian taste<br>
+       at the SAMURAI&nbsp;KITCHEN
+     </h1>
+   </div>
+ </div>
+
+</div>
+<a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</a>
+
+
+     <!-- コントロールボタン 左側 -->
+     <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </a>
+
+     <!-- コントロールボタン 右側 -->
+     <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </a>
+   </div>
+
+    <!-- カルーセル終了 -->
+
+        <!-- アバウトセクション開始 -->
+    <!--idにはaboutを設定 -->
+    <!-- アバウトセクション開始 -->
+<section class="about_us_bg" id="about">
+  <div class="container py-5 mb-5">
+    <div class="row">
+      <div class="col-lg-6 text-left">
+        <div class="py-5">
+          <h2 class="section_title about mb-5">
+            ABOUT US
+          </h2>
+          <p class="mb-2">
+            本場イタリアンの味を追求し、厳選した国産食材を使用。<br>
+            オーガニック野菜、熟成させた自家製プロシュート、<br>
+            毎朝仕込むピザ生地など、あらゆる食材へのこだわり。<br>
+          </p>
+          <p class="mb-2">
+            料理に合うワインもイタリア産のものから国産のものまでラインナップ豊富。<br>
+          </p>
+          <p class="mb-2">
+            イタリアのワインの名産地「ピエモンテ州」「ヴェネト州」で生産された<br>
+            ワインを取り揃え、上品な味わいをお愉しみいただけます。<br>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/img-about-us.png" class="img-fluid" alt="pizza">
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- アバウトセクション終了 -->
   </main>
 </body>
 
