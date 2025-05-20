@@ -81,9 +81,10 @@ p {
 }
 
 .my_carousel_caption::before {
-  content: url(img\logoSymbol_White.png);
+  content: url(../img/logoSymbol_White.png);
   display: block;
-}
+}/* ----\は使わない。パス内にある \（バックスラッシュ）は、Windowsのパス区切り文字だが、CSSでは使用できない。
+CSSの url() 関数内では、スラッシュ / を使う必要があります。 */
 
 @media screen and (max-width:375px) {
   .my_carousel_caption {
@@ -140,7 +141,7 @@ p {
 /* ----------------------------------------------- レビュー */
 
 .review_wrapper {
-  background-image: url(img/background-reviews.jpg);
+  background-image: url(../img/background-reviews.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
