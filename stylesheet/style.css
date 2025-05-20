@@ -81,7 +81,7 @@ p {
 }
 
 .my_carousel_caption::before {
-  content: url(img\logoSymbol_White.png);
+  content: url(../img/logoSymbol_White.png);
   display: block;
 }
 
@@ -140,7 +140,7 @@ p {
 /* ----------------------------------------------- レビュー */
 
 .review_wrapper {
-  background-image: url(img/background-reviews.jpg);
+  background-image: url(../img/background-reviews.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
